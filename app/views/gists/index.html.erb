@@ -1,0 +1,9 @@
+<h1>Gist Home</h1>
+
+<script>
+(function() {
+  var gists = <%= @gists.to_json.html_safe %>
+  GT.initialize(gists);
+})();
+
+</script>
