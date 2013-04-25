@@ -1,4 +1,5 @@
 GT.Views.GistDetailView = Backbone.View.extend({
+
   render: function() {
     var that = this;
 
@@ -9,5 +10,5 @@ GT.Views.GistDetailView = Backbone.View.extend({
     that.$el.html(renderedContent);
 
     return that;
-  }
+  },
 });

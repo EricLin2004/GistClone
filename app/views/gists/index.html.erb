@@ -1,9 +1,14 @@
 <h1>Gist Home</h1>
+<div class="content"></div>
 
 <script>
 (function() {
   var gists = <%= @gists.to_json.html_safe %>
-  GT.initialize(gists);
+  var favorites = <%= @favorites.to_json.html_safe %>
+  GT.initialize(
+    $('.content'),
+    gists,
+    favorites);
 })();
 
 </script>

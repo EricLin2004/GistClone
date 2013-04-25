@@ -1,3 +1,21 @@
+<ul class="favList">
 <% gists.each( function(gist) { %>
-  <%= gist.escape("title") %>
+  <li><%= gist.escape("title") %>
+    <% var alreadyFaved = false; %>
+    <% var favId = null; %>
+    <% GT.favorites.each( function(fav) { %>
+      <% if(gist.escape("id") === fav.escape("gist_id")){ %>
+        <% alreadyFaved = true %>
+        <% favId = fav.escape('id') %>
+      <% } %>
+    <% }); %>
+
+    <% if (alreadyFaved) { %>
+      <button data-gistid=<%= gist.escape("id")%> data-favid=<%= favId %>>Unfavorite</button>
+    <% } else { %>
+      <button data-gistid=<%= gist.escape("id")%> data-favid=<%= favId %>>Favorite</button>
+    <% } %>
+
+  </li>
 <% }); %>
+</ul>

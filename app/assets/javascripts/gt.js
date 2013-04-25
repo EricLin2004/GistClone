@@ -4,11 +4,13 @@ window.GT = {
   Views: {},
   Routers: {},
 
-  initialize: function (gists) {
+  initialize: function ($rootEl, gists, favorites) {
     var that = this;
-    console.log("before");
     that.gists = new GT.Collections.Gists(gists);
-    console.log("after");
+    that.favorites = new GT.Collections.Favorites(favorites);
+    // console.log(that.favorites);
+    // console.log(that.gists);
+    that.$el = $rootEl;
 
     new GT.Routers.GistsRouter();
     Backbone.history.start();

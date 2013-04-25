@@ -4,9 +4,11 @@ class GistsController < ApplicationController
 
   def index
     @gists = User.find(session[:user_id]).gists
+    @favorites = User.find(session[:user_id]).favorites
+
     respond_to do |format|
-      format.json {render :json => @gists}
-      format.html {render :index}
+      format.json { render :json => @gists }
+      format.html { render :index }
     end
   end
 end

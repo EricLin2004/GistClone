@@ -6,13 +6,10 @@ GT.Routers.GistsRouter = Backbone.Router.extend({
 
   index: function() {
     var that = this;
-    console.log(GT.gists);
 
-    var gistIndexView = new GT.Views.GistIndexView({
-      gists: that.collection
-    });
+    var gistIndexView = new GT.Views.GistIndexView();
 
-    that.$el.html(gistIndexView.render().$el);
+    GT.$el.html(gistIndexView.render().$el);
   },
 
   show: function() {
