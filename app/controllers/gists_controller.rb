@@ -11,4 +11,14 @@ class GistsController < ApplicationController
       format.html { render :index }
     end
   end
+
+  def create
+    params[:model][:user_id] = session[:user_id]
+    params[:model][:gist_files_attributes] = params[:model][:gistFiles]
+    params[:model].delete(:gistFiles)
+
+    @gist = Gist.new(params[:model])
+    @gist.save!
+    redirect_to gists_url
+  end
 end

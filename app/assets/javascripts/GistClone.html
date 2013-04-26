@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://localhost:3000/gists/?title=jtlkej#gist/new -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>GistClone</title>
+  <link href="./GistClone_files/application.css" media="all" rel="stylesheet" type="text/css">
+<link href="./GistClone_files/favorites.css" media="all" rel="stylesheet" type="text/css">
+<link href="./GistClone_files/gists.css" media="all" rel="stylesheet" type="text/css">
+<link href="./GistClone_files/sessions.css" media="all" rel="stylesheet" type="text/css">
+  <script src="./GistClone_files/jquery.js" type="text/javascript"></script>
+<script src="./GistClone_files/jquery_ujs.js" type="text/javascript"></script>
+<script src="./GistClone_files/underscore.js" type="text/javascript"></script>
+<script src="./GistClone_files/backbone.js" type="text/javascript"></script>
+<script src="./GistClone_files/backbone-forms.js" type="text/javascript"></script>
+<script src="./GistClone_files/backbone-relational.js" type="text/javascript"></script>
+<script src="./GistClone_files/gt.js" type="text/javascript"></script>
+<script src="./GistClone_files/favorite.js" type="text/javascript"></script>
+<script src="./GistClone_files/gist.js" type="text/javascript"></script>
+<script src="./GistClone_files/gistFile.js" type="text/javascript"></script>
+<script src="./GistClone_files/favorites.js" type="text/javascript"></script>
+<script src="./GistClone_files/gistFiles.js" type="text/javascript"></script>
+<script src="./GistClone_files/gists.js" type="text/javascript"></script>
+<script src="./GistClone_files/gistDetailView.js" type="text/javascript"></script>
+<script src="./GistClone_files/gistIndexView.js" type="text/javascript"></script>
+<script src="./GistClone_files/newGistFileFormView.js" type="text/javascript"></script>
+<script src="./GistClone_files/newGistFormView.js" type="text/javascript"></script>
+<script src="./GistClone_files/gistsRouter.js" type="text/javascript"></script>
+<script src="./GistClone_files/favorites(1).js" type="text/javascript"></script>
+<script src="./GistClone_files/gists(1).js" type="text/javascript"></script>
+<script src="./GistClone_files/sessions.js" type="text/javascript"></script>
+<script src="./GistClone_files/detail.js" type="text/javascript"></script>
+<script src="./GistClone_files/index.js" type="text/javascript"></script>
+<script src="./GistClone_files/application.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="28Y6MrXboHpEG1NGf/s4gVnH7qTNTpZchpfdwmuVssA=" name="csrf-token">
+</head>
+<body>
+    <a href="http://localhost:3000/sessions/1" data-method="delete" rel="nofollow">Log Out</a>
+<h1>Gist Home</h1>
+<div class="content"><div><form data-fieldsets=""><fieldset data-fields="">          <div>      <label for="c37_title">Title</label>      <div>        <span data-editor=""><input id="c37_title" name="title" type="text"></span>        <div data-error=""></div>        <div></div>      </div>    </div></fieldset><button>Submit</button></form><form data-fieldsets=""><fieldset data-fields="">          <div>      <label for="c46_body">Body</label>      <div>        <span data-editor=""><textarea id="c46_body" name="body" type="text"></textarea></span>        <div data-error=""></div>        <div></div>      </div>    </div></fieldset></form></div></div>
+
+<script>
+(function() {
+  var gists = [{"created_at":"2013-04-25T00:19:59Z","id":1,"title":"Cool code","updated_at":"2013-04-25T00:19:59Z","user_id":1},{"created_at":"2013-04-25T00:19:59Z","id":3,"title":"Cool 2","updated_at":"2013-04-25T00:19:59Z","user_id":1},{"created_at":"2013-04-25T18:49:56Z","id":5,"title":"test","updated_at":"2013-04-25T18:49:56Z","user_id":1},{"created_at":"2013-04-25T18:52:39Z","id":6,"title":"another","updated_at":"2013-04-25T18:52:39Z","user_id":1},{"created_at":"2013-04-25T18:53:34Z","id":7,"title":"dsfsef","updated_at":"2013-04-25T18:53:34Z","user_id":1},{"created_at":"2013-04-25T18:53:54Z","id":8,"title":"sfsfds","updated_at":"2013-04-25T18:53:54Z","user_id":1},{"created_at":"2013-04-25T21:17:44Z","id":9,"title":"test","updated_at":"2013-04-25T21:17:44Z","user_id":1},{"created_at":"2013-04-25T21:17:52Z","id":10,"title":"test","updated_at":"2013-04-25T21:17:52Z","user_id":1},{"created_at":"2013-04-25T21:20:16Z","id":11,"title":"","updated_at":"2013-04-25T21:20:16Z","user_id":1},{"created_at":"2013-04-25T21:20:27Z","id":12,"title":"test2","updated_at":"2013-04-25T21:20:27Z","user_id":1},{"created_at":"2013-04-25T21:23:14Z","id":13,"title":"test5","updated_at":"2013-04-25T21:23:14Z","user_id":1}]
+  var favorites = [{"created_at":"2013-04-25T00:49:21Z","gist_id":3,"id":42,"updated_at":"2013-04-25T00:49:21Z","user_id":1},{"created_at":"2013-04-25T00:49:22Z","gist_id":1,"id":43,"updated_at":"2013-04-25T00:49:22Z","user_id":1}]
+  GT.initialize(
+    $('.content'),
+    gists,
+    favorites);
+})();
+
+</script>
+
+
+
+</body></html>
